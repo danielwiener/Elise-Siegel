@@ -12,19 +12,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-		<?php if ( is_home() || is_front_page() || is_page('projects') || is_page('contact') ): ?>
-			<meta name="description" content="Darren J. Helgesen offers architectural, interior, and landscape design, including site analysis, preliminary design, working drawings, and construction follow up.">
-		<?php elseif( is_page('press') ): ?>
-			      <meta name="description" content="Darren Helgesen is included in numerous publications, including Architectural Digest, House Beautiful, Country Living, This Old House, W, Elle, Hampton Style.">	
-	 	<?php else: ?> 
-		<?php $post = get_post( $postID );
-		    $dw_dh_excerpt = strip_tags($post->post_content);
-			$dw_dh_excerpt = str_replace( array( "\r\n", "\n\n"),' ',$dw_dh_excerpt); 
-			$dw_dh_excerpt = preg_replace('/\s+?(\S+)?$/', '', substr($dw_dh_excerpt, 0, 155));
-			?>
-			 <meta name="description" content="<?php echo $dw_dh_excerpt; ?>">
-		<?php endif; ?>
-		<meta name="keywords" content="Amagansett Architects, East Hampton Architects, Montauk Architects, Hamptons Architects, interior design, landscape design, East End, New Construction, Renovation, Architectural Additions"> 
+			<meta name="description" content="Official website for Elise Siegel, contemporary sculptor">
+		<meta name="keywords" content="sculpture, contemporary sculpture, art, artist, ceramics, figures, "> 
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
