@@ -34,7 +34,7 @@ Author URI: http://danielwiener.com/
  ?>
 
 	 <h4><a href="http://documentation.diyartportfolios.com/" target="_blank">Basic Wordpress Instructions and How to Create Online Content</a></h4>
-	 <p>Here is a list of recent instructions. I will be adding to it, as needed. Click the link above to see all the instructions. If you want something explained to you I will add it. Also please check the <a href="/wp-admin/admin.php?page=video-user-manuals/plugin.php">video manual</a></p>
+	 <p>Here is a list of recent instructions. I will be adding to it, as needed. Click the link above to see all the instructions. If you want something explained to you I will add it.</p>
 	<?php //comments - do this for grants category only. And maybe separate it into another function.  
 	//http://wpsnipp.com/index.php/functions-php/replace-dashboard-news-feed-with-another-rss-feed/
 	echo '<div class="rss-widget">';

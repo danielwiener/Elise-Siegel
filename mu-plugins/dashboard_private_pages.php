@@ -35,7 +35,7 @@ Author URI: http://danielwiener.com/
 
 function display_dashboard_widget()
 { ?>
-	<h4>Instructions Coming Soon</h4>
+	<h4>Instructions Coming Soon, If Needed</h4>
 <?php
   //define arguments for WP_Query()
   $qargs = array(
@@ -65,7 +65,7 @@ function display_dashboard_widget()
 function add_dashboard_widgets()
 {
   // create a dashboard widget called "private_page_menu_dashboard_widget" with the title "Private Pages Menu" and call our display function to draw it
-  wp_add_dashboard_widget('private_page_menu_dashboard_widget', 'Family Matters NY Instructions', 'display_dashboard_widget' );
+  wp_add_dashboard_widget('private_page_menu_dashboard_widget', 'Elise Siegel Site Special Instructions', 'display_dashboard_widget' );
 }
 
 // finally we have to hook our function into the dashboard setup using add_action
