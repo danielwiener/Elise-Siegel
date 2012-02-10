@@ -6,7 +6,7 @@
  * is designed for, generally via the style.css stylesheet.
  */
 if ( ! isset( $content_width ) )
-	$content_width = 700;
+	$content_width = 750;
 
 //http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/ 
 // add a favicon to your 

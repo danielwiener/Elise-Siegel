@@ -96,7 +96,7 @@ DESCRIPTION: One centered column with no sidebar
 
 .one-column #content {
 	margin: 0 auto;
-	width: 700px;
+	width: 750px;
 }
 
 /*
@@ -423,7 +423,7 @@ div.menu li {
 	line-height: 30px;
 	padding: 0 10px;
 	text-decoration: none;
-	border-right: 1px solid #999;
+	/*border-right: 1px solid #999;*/
 }
 #access ul ul {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
