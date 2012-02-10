@@ -18,30 +18,30 @@ add_action('wp_head', 'blog_favicon');
 
 // smart jquery inclusion 
 //http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/ 
-function dw_add_js_scripts() {
-	if (!is_admin()) {
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
-		wp_enqueue_script('jquery'); 
-	
-		   wp_register_script('dw_slideshow',
-		       get_bloginfo('stylesheet_directory') . '/js/dw_slideshow.js',
-		       array('jquery'),
-		       '1.0' );
-		   // enqueue the script
-		   wp_enqueue_script('dw_slideshow');
-		   // register your script location, dependencies and version
-		   //then if press page add the text overlay js
-		   // can't get the is_page('press') to work. don't know why. try again later
-		   wp_register_script('dw_text_overlay',
-		       get_bloginfo('stylesheet_directory') . '/js/dw_text_overlay.js',
-		       array('jquery'),
-		       '1.0' ); 
-		wp_enqueue_script('dw_text_overlay');
-	  }       
-} 
+// function dw_add_js_scripts() {
+// 	if (!is_admin()) {
+// 		wp_deregister_script('jquery');
+// 		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
+// 		wp_enqueue_script('jquery'); 
+// 	
+// 		   wp_register_script('dw_slideshow',
+// 		       get_bloginfo('stylesheet_directory') . '/js/dw_slideshow.js',
+// 		       array('jquery'),
+// 		       '1.0' );
+// 		   // enqueue the script
+// 		   wp_enqueue_script('dw_slideshow');
+// 		   // register your script location, dependencies and version
+// 		   //then if press page add the text overlay js
+// 		   // can't get the is_page('press') to work. don't know why. try again later
+// 		   wp_register_script('dw_text_overlay',
+// 		       get_bloginfo('stylesheet_directory') . '/js/dw_text_overlay.js',
+// 		       array('jquery'),
+// 		       '1.0' ); 
+// 		wp_enqueue_script('dw_text_overlay');
+// 	  }       
+// }   
 //also need to figure out how do this with less repitition, more elegantly
-add_action('init', 'dw_add_js_scripts');
+// add_action('init', 'dw_add_js_scripts'); 
 
 // enable threaded comments
 function enable_threaded_comments(){
@@ -109,7 +109,7 @@ if ( ! function_exists( 'twentyten_setup' ) ):
  * @uses load_theme_textdomain() For translation/localization support.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since East End Architect 0.5
+ * @since Elise Siegel 0.5
  */
 function twentyten_setup() {
 
@@ -123,9 +123,10 @@ function twentyten_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 150, 150, true ); // default thumbnail size
 	add_image_size('pinky', 40, 40, true); // for pinky previews
-	add_image_size('tn-200', 200, 200, true); // just in case
-	add_image_size('tn-250', 250, 250, true); // just in case   
-   	add_image_size('tn-300', 300, 300, true); // just in case
+	add_image_size('tn-200', 200, 200, false); // just in case
+	add_image_size('tn-150', 150, 150, false); // just in case   
+   	add_image_size('tn-300', 300, 300, false); // just in case 
+	add_image_size('small_proportional', 75, 75, false);
 
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory
@@ -211,26 +212,26 @@ This if from the Gravy template by Darren Hoyt. http://www.darrenhoyt.com
 */
 
 //add google analytics to footer
-function add_google_analytics() {
-echo '<script type="text/javascript">';
-echo "\n";
-echo '  var _gaq = _gaq || [];';
-echo '  _gaq.push(["_setAccount", "UA-21463862-1"]);';
-echo '  _gaq.push(["_trackPageview"]);';
-echo "\n";
-echo '  (function() {';
-echo '    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;';
-echo '    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";';
-echo '    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);';
-echo '  })();';
-echo "\n";
-echo '</script>';
-}
-add_action('wp_footer', 'add_google_analytics');
+// function add_google_analytics() {
+// echo '<script type="text/javascript">';
+// echo "\n";
+// echo '  var _gaq = _gaq || [];';
+// echo '  _gaq.push(["_setAccount", "UA-21463862-1"]);';
+// echo '  _gaq.push(["_trackPageview"]);';
+// echo "\n";
+// echo '  (function() {';
+// echo '    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;';
+// echo '    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";';
+// echo '    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);';
+// echo '  })();';
+// echo "\n";
+// echo '</script>';
+// }
+// add_action('wp_footer', 'add_google_analytics');
 
-add_role('guest', 'Guest', array(
-    'read' => true, // True allows that capability
-    'read_private_posts' => true,
-	'read_private_pages' => true, 
-    'delete_posts' => false, // Use false to explicitly deny
-));
+// add_role('guest', 'Guest', array(
+//     'read' => true, // True allows that capability
+//     'read_private_posts' => true,
+// 	'read_private_pages' => true, 
+//     'delete_posts' => false, // Use false to explicitly deny
+// ));  
