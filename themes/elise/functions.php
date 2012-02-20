@@ -242,11 +242,30 @@ function dw_metaboxes( array $dw_meta_boxes ) {
 		'show_names' => true, // Show field names on the left
 		'fields'     => array(
 			array(
-				'name' => 'Test Text',
-				'desc' => 'field description (optional)',
-				'id'   => $prefix . 'test_text',
+				'name' => 'Year',
+				'desc' => 'Please, enter the year.',
+				'id'   => $prefix . 'year',
 				'type' => 'text',
-			),			
+			),
+			array(
+				'name' => 'Materials',
+				'desc' => 'Please, list the materials.',
+				'id'   => $prefix . 'materials',
+				'type' => 'text',
+			),
+			array(
+				'name' => 'Dimensions',
+				'desc' => 'Please, enter the dimensions.',
+				'id'   => $prefix . 'dimensions',
+				'type' => 'text',
+			), 
+			array(
+				'name' => 'Optional Text',
+				'desc' => 'Enter added text, links, etc., as needed.',
+				'id'   => $prefix . 'optional_text',
+				'type' => 'wysiwyg',
+				'options' => array(	'textarea_rows' => 4, ),
+			),   		
 		),
 	);
 
