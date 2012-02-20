@@ -43,7 +43,7 @@
 				<li>
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				</li><?php endforeach; ?>      
-			</ul><?php endif; // end primary widget area ?>this is the primary widget
+			</ul><?php endif; // end primary widget area ?>
 		</div><!-- #primary .widget-area -->
 		<?php
 					// A second sidebar for widgets, just because.

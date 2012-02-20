@@ -211,6 +211,63 @@ April 18, 2011 deleted this, because I was not using it. Find it in many of my f
 This if from the Gravy template by Darren Hoyt. http://www.darrenhoyt.com 
 */
 
+/**
+ * Include and setup custom metaboxes and fields.
+ *
+ * @category YourThemeOrPlugin
+ * @package  Metaboxes
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @link     https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
+ */
+
+add_filter( 'cmb_meta_boxes', 'dw_metaboxes' );
+/**
+ * Define the metabox and field configurations.
+ *
+ * @param  array $meta_boxes
+ * @return array
+ */
+function dw_metaboxes( array $dw_meta_boxes ) {
+
+	// Start with an underscore to hide fields from custom fields list
+	$prefix = '_dw_';
+
+	$dw_meta_boxes[] = array(
+		'id'         => 'art_info',
+		'title'      => 'Artwork Information',
+		'pages'      => array( 'page', ), // Post type
+		'context'    => 'normal',
+		'priority'   => 'high',
+	    'show_on' => array( 'key' => 'page-template', 'value' => 'page-artwork.php' ), //only shows on artwork pages, maybe figure out how to do parent page - Sculpture
+		'show_names' => true, // Show field names on the left
+		'fields'     => array(
+			array(
+				'name' => 'Test Text',
+				'desc' => 'field description (optional)',
+				'id'   => $prefix . 'test_text',
+				'type' => 'text',
+			),			
+		),
+	);
+
+
+	// Add other metaboxes as needed
+
+	return $dw_meta_boxes;
+}
+
+add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
+/**
+ * Initialize the metabox class.
+ */
+function cmb_initialize_cmb_meta_boxes() {
+
+	if ( ! class_exists( 'cmb_Meta_Box' ) )
+		require_once 'lib/metabox/init.php';
+
+}
+
+
 //add google analytics to footer
 // function add_google_analytics() {
 // echo '<script type="text/javascript">';

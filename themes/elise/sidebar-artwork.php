@@ -17,7 +17,7 @@
 			<ul class="xoxo">
 				<li style="list-style: none">
 					<h3 class="widget-title">
-						Projects
+						<?php the_title(); ?>
 					</h3><?php
 											/* When we call the dynamic_sidebar() function, it'll spit out
 											 * the widgets for that widget area. If it instead returns false,
