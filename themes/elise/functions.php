@@ -287,6 +287,17 @@ function cmb_initialize_cmb_meta_boxes() {
 }
 
 
+/*-----------------------------------------
+Check if a page has any children / subpages
+http://www.wpmayor.com/wordpress-hacks/check-if-a-page-has-any-children-or-subpages/
+-----------------------------------------*/
+ 
+function has_children($post_id) {
+    $children = get_pages("child_of=$post_id");
+    if( count( $children ) != 0 ) { return true; } // Has Children
+    else { return false; } // No children
+}
+
 //add google analytics to footer
 // function add_google_analytics() {
 // echo '<script type="text/javascript">';
