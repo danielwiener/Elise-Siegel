@@ -67,19 +67,22 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+	/*margin: 0 -240px 0 0;*/
+	/*width: 100%;*/ 
+	/*border: 1px solid green;*/
 }
 #content {
-	margin: 0 0px 20px; /*DW*/
+	margin: 0 0px 20px; /*DW*/ 
+	/*border: 1px solid red;*/
+ 
 }
 #primary,
 #secondary {
 	float: left; /*DW*/
 	overflow: hidden;
-	width: 200px; /*DW*/
-	/*border: 1px solid #999;*/ 
-	padding: 0 18px 0 0;
+	width: 150px; /*DW*/
+    /*border: 1px solid #999;*/ 
+	padding: 0 18px 0 15px;
 }
 #secondary {
 	clear: right;
@@ -489,7 +492,7 @@ div.menu li {
 }
 #content {
 	margin-bottom: 36px;
-	width: 700px;
+   /* width: 700px;*/ 
 }
 #content,
 #content input,
@@ -628,7 +631,8 @@ div.menu li {
 .entry-summary {
 	clear: both;
 	padding: 12px 0 0 0; 
-	width: 560px;
+   /* width: 750px;*/
+	/*border: 1px solid yellow;*/
 }
 #content .entry-summary p:last-child {
 	margin-bottom: 12px;
@@ -1195,14 +1199,15 @@ h3#reply-title {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-   color: #000B6C;
-	font-size: 28px;
-	font-weight: 600;
+   color: #000;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 h3.widget-title {
-	padding: 0px 0px 10px 0px;
-	font-size: 18px; /*dw*/
+	padding: 0px 0px 2px 0px;
+	font-size: 16px; /*dw*/ 
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 .widget-area a:link, /*for side menu*/
 .widget-area a:visited{
@@ -1221,9 +1226,9 @@ text-decoration: none;
 
 h3.widget-title a:link, h3.widget-title a:visited {
    font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-	color: #000B6C;
+	color: #000;
 	font-size: 18px;
-	font-weight: 600; 
+	font-weight: 400; 
 	} 
 #main #primary p  {
 	font-size: 14px;

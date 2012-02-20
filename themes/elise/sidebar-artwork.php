@@ -14,41 +14,18 @@
 ?>
 		<div id="primary" class="widget-area" role="complementary">
 			<ul class="xoxo">
-				<li style="list-style: none">
+				<li>
 					<h3 class="widget-title">
-						<?php the_title(); ?>, <?php echo $dw_year ?>
+						<?php the_title(); ?>
 					</h3> </li>
+						 <li><?php echo $dw_year ?></li>
 					     <li><?php echo $dw_materials; ?></li>
 						 <li><?php echo $dw_dimensions; ?></li>
-													     
-			</ul> 
-			
-			<?php
-			
-			$args = array(
-						'numberposts' => -1,
-						'post_type' => 'page', 
-						'post_status' => 'publish',
-						'post_parent' => 69,
-						'orderby'     => 'title',
-						'order'       => 'ASC'
-						);
-					global $post;
-					$program_pages = get_posts($args);
-					foreach($program_pages as $post) :
-					   setup_postdata($post); 
-					 ?>
-</li>
-<li>
-<a href="<?php the_permalink(); ?>"><?php // the_title(); ?></a>
-</li><?php endforeach; ?>
-		</div><!-- #primary .widget-area -->
-		<?php
-					// A second sidebar for widgets, just because.
-					if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-		<div id="secondary" class="widget-area" role="complementary">
-			<ul class="xoxo">
-				</li><?php dynamic_sidebar( 'secondary-widget-area' ); ?>
+						<?php if ( $dw_optional_text ): ?>
+							  <li><?php echo $dw_optional_text; ?></li>
+						<?php endif ?> 
+						
+			 
 			</ul>
-		</div><!-- #secondary .widget-area -->
-		<?php endif; ?>
+			
+		</div><!-- #primary .widget-area -->
