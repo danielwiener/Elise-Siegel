@@ -5,55 +5,50 @@
  * @package WordPress
  * @subpackage Elise Siegel
  * @since Elise Siegel 1.0
- */
+ */ 
+	$dw_year =  get_post_meta($post->ID, "_dw_year", $single = true);
+	$dw_dimensions =  get_post_meta($post->ID, "_dw_dimensions", $single = true);
+	$dw_materials =  get_post_meta($post->ID, "_dw_materials", $single = true);
+	$dw_optional_text =  get_post_meta($post->ID, "_dw_optional_text", $single = true); 
+	
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
 		<div id="primary" class="widget-area" role="complementary">
 			<ul class="xoxo">
 				<li style="list-style: none">
 					<h3 class="widget-title">
-						<?php the_title(); ?>
-					</h3><?php
-											/* When we call the dynamic_sidebar() function, it'll spit out
-											 * the widgets for that widget area. If it instead returns false,
-											 * then the sidebar simply doesn't exist, so we'll hard-code in
-											 * some default sidebar stuff just in case.
-											 */
-											if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?><?php
-													
-													$args = array(
-																'numberposts' => -1,
-																'post_type' => 'page', 
-																'post_status' => 'publish',
-																'post_parent' => 69,
-																'orderby'     => 'title',
-																'order'       => 'ASC'
-																);
-															global $post;
-															$program_pages = get_posts($args);
-															foreach($program_pages as $post) :
-															   setup_postdata($post); 
-															 ?>
-				</li>
-				<li>
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</li><?php endforeach; ?>      
-			</ul><?php endif; // end primary widget area ?>this is the primary widget
+						<?php the_title(); ?>, <?php echo $dw_year ?>
+					</h3> </li>
+					     <li><?php echo $dw_materials; ?></li>
+						 <li><?php echo $dw_dimensions; ?></li>
+													     
+			</ul> 
+			
+			<?php
+			
+			$args = array(
+						'numberposts' => -1,
+						'post_type' => 'page', 
+						'post_status' => 'publish',
+						'post_parent' => 69,
+						'orderby'     => 'title',
+						'order'       => 'ASC'
+						);
+					global $post;
+					$program_pages = get_posts($args);
+					foreach($program_pages as $post) :
+					   setup_postdata($post); 
+					 ?>
+</li>
+<li>
+<a href="<?php the_permalink(); ?>"><?php // the_title(); ?></a>
+</li><?php endforeach; ?>
 		</div><!-- #primary .widget-area -->
 		<?php
 					// A second sidebar for widgets, just because.
 					if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 			<ul class="xoxo">
-				<li>this is the secondary widget
 				</li><?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</ul>
 		</div><!-- #secondary .widget-area -->
 		<?php endif; ?>
-	</body>
-</html>
