@@ -50,7 +50,7 @@
 						'post_status' => 'publish',
 						'post_parent' => $this_id,
 						'orderby' => 'menu_order',
-						'order' => 'DESC'
+						'order' => 'ASC'
 				    );
 					$tn_query = New WP_Query($tn_args);
 				     	while ( $tn_query->have_posts() ) : $tn_query->the_post(); ?>
