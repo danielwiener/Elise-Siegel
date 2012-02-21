@@ -22,7 +22,7 @@
 					     <li><?php echo $dw_materials; ?></li>
 						 <li><?php echo $dw_dimensions; ?></li>
 						<?php if ( $dw_optional_text ): ?>
-							  <li><?php echo $dw_optional_text; ?></li>
+							  <li><?php echo wpautop($dw_optional_text); ?></li>
 						<?php endif ?>  
 			</ul>
 			<ul>
