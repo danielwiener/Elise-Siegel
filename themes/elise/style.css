@@ -462,7 +462,7 @@ div.menu li {
 #access li:hover > a,
 #access ul ul :hover > a {
 	background: #eee;
-	color: #000B6C;
+	color: #666;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -472,7 +472,7 @@ div.menu li {
 #access ul li.current-page-ancestor > a, /*DW to highlight page when child page is open*/
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
-	color: #000B6C;
+	color: #666;
 }
 
 
@@ -482,7 +482,7 @@ div.menu li {
 * html #access ul li.current-menu-item a,
 * html #access ul li.current-menu-parent a,
 * html #access ul li a:hover {
-	color: #000B6C;
+	color: #666;
 }
 
 
