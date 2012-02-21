@@ -1,4 +1,4 @@
-f/*
+/*
 Theme Name: Elise Siegel
 Theme URI: http://elisesiegel.com/
 Description: The Elise Siegel theme is a child theme of 2010 customized for http://elisesiegel.com/ by Daniel Wiener, http://www.danielwiener.com with a custom menu, header image, and background. Originally from Twenty Ten
@@ -72,8 +72,8 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	/*border: 1px solid green;*/
 }
 #content {
-	margin: 0 0px 20px; /*DW*/ 
-	/*border: 1px solid red;*/
+	margin: 0 0px 10px; /*DW*/ 
+	/*border: 1px solid red;*/ 
  
 }
 #primary,
@@ -112,21 +112,21 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 	width: 900px;
 }
 
-.news_width #content {
-	/*margin: 0 auto;*/
-	width: 800px;
-}
-
- .news {
-	/*width: 600px;*/
-	margin: -45px 0 0 120px;
-} 
 
 /*DESCRIPTION: Full width content with no sidebar; used for double image pages and for more*/
 .full_width #content {
 	width: 900px;
     /*border: 1px solid #999;*/
-}
+}   
+
+
+/*	#myoutercontainer { position:relative }
+	#myinnercontainer { position:absolute;
+		top:50%;
+		height:10em;
+		margin-top:-5em
+		background: gray;} */
+
 
 /* =Fonts
 -------------------------------------------------------------- */
@@ -492,7 +492,7 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 20px 0 0 0;
+	padding: 10px 0 0 0;
    /* border: 1px solid #999;*/
 }
 #content {
@@ -925,26 +925,26 @@ color: #000;
 -------------------------------------------------------------- */
 #content #image_grid {
 	padding: 0 0 0 16px;
-	/*border: 1px solid #999;*/
-	font-family: Helvetica, Arial, sans-serif;
-	margin: 0 auto;
-	text-align: center;
+	/*border: 1px solid #999; */
+   /* position: relative;*/ 
+    height: 160px;
 	}
 
 #content #image_grid ul {
-list-style: none;
+list-style: none;  
+/*border: 1px solid yellow;*/
 }
 
 #content #image_grid ul li {
 	float: left;
 	padding: 0 20px 10px 0;
-	text-align: center;
-	/*border: 1px solid #999;*/
+	line-height: 160px;    /*vertical centering set line height in the parent - http://www.vanseodesign.com/css/vertical-centering/*/
 }
 
 #content #image_grid ul li img {
 		padding: 0;
-		margin: 0 0 -7px 0; /*this moves the text up.*/ 
+		margin: 0; 
+		vertical-align: middle;       /*then vertical-align in the child, in this case the image*/
 		}
 
 /* =Navigation
