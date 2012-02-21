@@ -44,13 +44,13 @@ add_action('wp_head', 'blog_favicon');
 // add_action('init', 'dw_add_js_scripts'); 
 
 // enable threaded comments
-function enable_threaded_comments(){
-	if (!is_admin()) {
-		if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
-			wp_enqueue_script('comment-reply');
-		}
-}
-add_action('get_header', 'enable_threaded_comments');
+// function enable_threaded_comments(){
+// 	if (!is_admin()) {
+// 		if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
+// 			wp_enqueue_script('comment-reply');
+// 		}
+// }
+// add_action('get_header', 'enable_threaded_comments');
 
 /**
 * kill the admin nag 
@@ -67,26 +67,26 @@ if (!current_user_can('edit_users')) {
 * http://wordpress.stackexchange.com/questions/1567/best-collection-of-code-for-your-functions-php-file 
 * This is added to use excerpts for meta-tags
 */
-if ( function_exists('add_post_type_support') ) {
-    add_action('init', 'add_page_excerpts');
-    function add_page_excerpts()
-    {
-        add_post_type_support( 'page', 'excerpt' );
-    }
-}
+// if ( function_exists('add_post_type_support') ) {
+//     add_action('init', 'add_page_excerpts');
+//     function add_page_excerpts()
+//     {
+//         add_post_type_support( 'page', 'excerpt' );
+//     }
+// }
 
 /**
 * 	Add categories to Pages. An easy way to have 2 table of content pages for Projects, without having to change project code
 *   http://shibashake.com/wordpress-theme/add-tags-and-categories-to-your-wordpress-page
 */ 
 
-	function add_custom_tags_box() {
-		add_meta_box(	'categorydiv', __('Categories'), 'post_categories_meta_box', 
-				'page', 'side', 'low'); 
-	   register_taxonomy_for_object_type('category', 'page');
-	} 
-	
-add_action('admin_menu', 'add_custom_tags_box');  
+// 	function add_custom_tags_box() {
+// 		add_meta_box(	'categorydiv', __('Categories'), 'post_categories_meta_box', 
+// 				'page', 'side', 'low'); 
+// 	   register_taxonomy_for_object_type('category', 'page');
+// 	} 
+// 	
+// add_action('admin_menu', 'add_custom_tags_box');  
 
 /** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'twentyten_setup' );
