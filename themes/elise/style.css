@@ -368,27 +368,32 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header { 
-	padding: 18px 0 0 0; /*DW*/
+	padding: 10px 0 0 0; /*DW*/
 }
 #site-title {
 	float: left;
 	font-size: 24px; 
 	line-height: 30px;
 	height: 33px; 
-	margin: 0 0px 0px 0;
-	width: 250px;
-	color: #666;
-	padding: 0 0 0 130px;
+	margin: 0;
+	width: 200px;
+	color: #000;
+	padding: 0 0 0 20px;
 	letter-spacing: .1em;
+	/*border: 1px solid #999;*/
  
 }
-#site-title a {
-	color: #666;
+#site-title a:link, #site-title a:visited {
+	color: #000;
 	text-decoration: none;
 	background: #FFFFFF;
 	display: block;
 	width: 250px; 
-} 
+}  
+
+#site-title a:hover, #site-title a:active { 
+	   color: #666;
+}
 
 
 
@@ -421,7 +426,7 @@ div.menu li {
 	position: relative;
 }
 #access a {
-	color: #666;
+	color: #000;
 	display: block;
 	line-height: 30px;
 	padding: 0 10px;
