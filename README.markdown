@@ -34,3 +34,9 @@ http://elisesiegel.com/
 - custom metaboxes for entering Dimensions, Media, etc.
 
 ***
+
+##February 21, 2012##
+
+- color, style, move header and menu
+
+- sculpture TOC page
