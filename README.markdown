@@ -3,14 +3,34 @@ http://elisesiegel.com/
 
 #CHANGELOG#
 
+***   
+
 ##February 8, 2012##
 
 - adding placeholder content for menus
 
-- styling mene
+- styling menu
 
 - added font Freight Sans from TypeKit
 
 - deleting Darren related material
+
+***
+
+##February 10, 2012##
+
+- added image.php and navigation with all thumbnail images.
+
+***
+
+##February 20, 2012##
+
+- added prev/next under image 
+
+- added routine for thumbnails navigation for images that are related
+
+- page template, loop and sidebar for artwork
+
+- custom metaboxes for entering Dimensions, Media, etc.
 
 ***
