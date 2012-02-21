@@ -924,7 +924,7 @@ color: #000;
 /* =Image Grid DW
 -------------------------------------------------------------- */
 #content #image_grid {
-	padding: 0 0 0 16px;
+	padding: 0 0 0 0px;
 	/*border: 1px solid #999; */
    /* position: relative;*/ 
     height: 160px;
@@ -937,7 +937,7 @@ list-style: none;
 
 #content #image_grid ul li {
 	float: left;
-	padding: 0 20px 10px 0;
+	padding: 0 9px 0px 0;
 	line-height: 160px;    /*vertical centering set line height in the parent - http://www.vanseodesign.com/css/vertical-centering/*/
 }
 
