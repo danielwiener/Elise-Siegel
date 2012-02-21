@@ -205,7 +205,7 @@ code {
 #footer-widget-area {
 	overflow: hidden;
 }
-#footer-widget-area .widget-area {
+#footer-widget-area {
 	float: left;
 	margin-right: 20px;
 	width: 220px;
@@ -1211,12 +1211,9 @@ h3.widget-title {
 }
 .widget-area a:link, /*for side menu*/
 .widget-area a:visited{
-	color: #000B6C;
+	color: #000;
 	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
 	line-height: 20px; 
-	font-weight: bold;
 }
 .widget-area a:active,
 .widget-area a:hover {
