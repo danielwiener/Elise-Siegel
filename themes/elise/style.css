@@ -103,6 +103,13 @@ DESCRIPTION: One centered column with no sidebar
 	width: 750px;
 }
 
+.resume #content {
+	margin: 0 auto;
+	width: 650px;
+	/*border: 1px solid #999;*/
+	margin-left: 170px;
+}
+
 /*
 LAYOUT: Full width, no sidebar
 DESCRIPTION: Full width content with no sidebar; used for attachment pages
@@ -121,12 +128,6 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 }   
 
 
-/*	#myoutercontainer { position:relative }
-	#myinnercontainer { position:absolute;
-		top:50%;
-		height:10em;
-		margin-top:-5em
-		background: gray;} */
 
 
 /* =Fonts
@@ -349,10 +350,6 @@ a:hover {
 	color: #333333;
 	text-decoration: none;
 }
-
-
-
-
 
 
 /* =Content
@@ -627,6 +624,29 @@ body.page .edit-link {
 	padding: 0;
 }
 
+/* =Resume DW 
+-------------------------------------------------------------- */
+
+.resume #content p { 
+	padding: 0 0 0 0;
+	margin: 0 0 10px 0;
+	line-height: 20px;
+	}    
+	
+.resume #content h2 { 
+	padding: 0 0 -0px 0;
+	margin: 15px 0 8px 0;
+ /*   line-height: 20px;*/   
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #000;
+	font-size: 23px;
+	line-height: 23px;
+	border-bottom: 1px solid #000;
+	}
+
+.resume #content em, .resume #content strong {
+	color: #000;
+	} 	 
 
 /* =Asides
 -------------------------------------------------------------- */
