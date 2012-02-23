@@ -98,6 +98,11 @@ LAYOUT: One column, no sidebar
 DESCRIPTION: One centered column with no sidebar
 */
 
+.regular #content {
+	width: 575px;
+	padding: 0 40px 0 0;
+}
+
 .one-column #content {
 	margin: 0 auto;
 	width: 750px;

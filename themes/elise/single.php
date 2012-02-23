@@ -3,13 +3,13 @@
  * The Template for displaying all single posts.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Elise Siegel
+ * @since Elise Siegel 1.0
  */
 
 get_header(); ?>
 
-		<div id="container">
+		<div id="container" class="regular">
 			<div id="content" role="main">
 
 			<?php
