@@ -372,3 +372,8 @@ function has_children($post_id) {
 // 	'read_private_pages' => true, 
 //     'delete_posts' => false, // Use false to explicitly deny
 // ));  
+add_action('wp_head', 'show_template');
+function show_template() {
+    global $template;
+    print_r($template);
+}
