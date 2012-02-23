@@ -40,3 +40,18 @@ http://elisesiegel.com/
 - color, style, move header and menu
 
 - sculpture TOC page
+
+- begin to integrate menu into old site, using wp-loader.php to be able to use WP functions outside of WP
+
+***
+
+##February 22, 2012##
+
+- color, style, upload resume
+
+- Press TOC archive page - category.php, upload press - style image and text   
+
+
+##February 23, 2012##
+
+- color, style, upload resume
