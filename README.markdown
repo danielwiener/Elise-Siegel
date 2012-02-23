@@ -58,3 +58,5 @@ http://elisesiegel.com/
 - adding all the Press with images
 
 - modifying Continue Reading Link
+
+- format Press single posts

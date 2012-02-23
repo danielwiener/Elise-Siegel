@@ -7,13 +7,7 @@
  * @since Elise Siegel 1.0
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-		<div id="primary" class="widget-area" role="complementary">
+		<div id="primary" class="widget-area for_menus" role="complementary">
 			<ul class="xoxo">
  										<?php
 											/* When we call the dynamic_sidebar() function, it'll spit out
@@ -34,5 +28,3 @@
 			</ul>
 		</div><!-- #secondary .widget-area -->
 		<?php endif; ?>
-	</body>
-</html>

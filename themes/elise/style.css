@@ -84,7 +84,11 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	width: 150px; /*DW*/
     /*border: 1px solid #999;*/ 
 	padding: 0 18px 0 15px;
-}
+} 
+
+#primary.for_menus {
+	width: 275px !important;
+} 
 #secondary {
 	clear: right;
 }
@@ -187,8 +191,7 @@ code {
 #wrapper {
 	margin: 0 auto;
 	width: 940px;
-}
-#wrapper {
+/*	border: 1px solid red;*/
 	background: #fff;
 	margin-top: 0px; /*DW*/
 	padding: 0 20px;
@@ -237,7 +240,7 @@ body {
 body,
 input,
 textarea {
-	color: #444;
+	color: #222;
 	font-size: 11px;
 	line-height: 18px;
 }
@@ -373,7 +376,7 @@ a:hover {
 #content,
 #content input,
 #content textarea { /*text size for all copy in main sections*/
-	color: #555;
+	color: #333;
 	font-size: 13px;
 	line-height: 22px;
 }
@@ -671,6 +674,14 @@ body.page .edit-link {
 	font-size: 24px;
 	font-weight: 400;
 	margin-left: -20px;
+} 
+
+.regular #content h1.entry-title {
+	color: #000;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+   /* text-transform: uppercase;*/
+	font-size: 24px;
+	font-weight: 400;
 }
 
 /* =Asides
@@ -1151,7 +1162,11 @@ h3.widget-title a:link, h3.widget-title a:visited {
 	font-family: Georgia;
 
 } 
+/*For press and magazine-style widget areas in regular sidebar*/ 
 
+#primary.for_menus ul.xoxo li ul li {
+	padding: 3px 0 3px 10px;
+}
 
 #wp_tag_cloud div {
 	line-height: 1.6em;
@@ -1212,47 +1227,8 @@ h3.widget-title a:link, h3.widget-title a:visited {
 }
 
 #primary {
-/*	border-right: 1px solid #999;*/
+	/*border: 1px solid #999;*/
 }
-
-
-#primary ul.menu li a, #primary ul.menu li a:visited {
-	font-family: Helvetica, Arial, sans-serif;
-	color: #999999;
-	font-size: 13px;
-	line-height: 30px;
-}
-
-#primary ul.menu li a:hover {
-	color: #333333;
-	text-decoration: none;
-}
-
-#primary ul.menu li.current-menu-item a, #primary ul.xoxo li.current-menu-item a { /*these highlight the side menus on About and on the News Pages*/
-	color: #333333;	
-	}
-
-#primary .side_menu #menu_for_projects li {
-		color: #999999;
-		font-size: 13px;
-			}
-	
-#primary .side_menu #menu_for_projects li.current-menu-item a {
-		color: #333333;	
-		}
-		
-#primary .side_menu #menu_for_projects .menu-item-type-custom {
-	padding-top: 20px;
-}
-
-#primary .side_menu #menu_for_projects .menu-item-200 { /*this is to deal with Ready to Wear. If the number changes this will have to change. If there is more than one non-date custom menu item added I will have to add some custom classes to the dates.*/
-	padding-top: 0px;
-}
-
-#primary .side_menu #menu_for_projects .menu-item-type-custom a:hover {
-	color: #333333;
-}
-
 
 #secondary {
 }
@@ -1437,34 +1413,4 @@ height: 200px;
 #archive_pagination a:active {
 	background:#e6e6e6;
 	border-color:#bebebe;
-	}  
-	
-/* =text overlay css for Press
--------------------------------------------------------------- */   
-div.dw_wrapper{
-	position:relative; /* important(so we can absolutely position the description div */ 
-}
-div.dw_description{
-	position:absolute; /* absolute position (so we can position it where we want)*/
-	bottom:6px; /* position will be on bottom */
-	left:0px;
-	display:none; /* hide it */
-	/* styling bellow */
-	background-color:black;
-	font-family: 'tahoma';
-	font-size: 14px;
-	line-height: 17px;
-	color:white;
-	width: 300px;
-} 
-div.dw_description a:link, div.dw_description a:visited{
-	 color: #99CCFF; 
-	} 
-
-div.dw_description a:hover, div.dw_description a:active{
-		 color: #aaa; 
-		}
-
-div.dw_description_content{
-	padding:10px;
-}                                            
+	}                                             
