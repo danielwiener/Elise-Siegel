@@ -86,7 +86,8 @@ if (!current_user_can('edit_users')) {
 // 	   register_taxonomy_for_object_type('category', 'page');
 // 	} 
 // 	
-// add_action('admin_menu', 'add_custom_tags_box');  
+// add_action('admin_menu', 'add_custom_tags_box'); 
+
 
 /** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'twentyten_setup' );
@@ -112,6 +113,11 @@ if ( ! function_exists( 'twentyten_setup' ) ):
  * @since Elise Siegel 0.5
  */
 function twentyten_setup() {
+	// removing filters from parent function.php file http://www.nohair.net/news/2011/wordpress-child-themes-and-removing-filters-in-functions-php/
+	remove_filter('excerpt_more', 'twentyten_auto_excerpt_more');
+ 	remove_filter('get_the_excerpt', 'twentyten_custom_excerpt_more');
+ 	add_filter( 'excerpt_more', 'dw_auto_excerpt_more' );
+	add_filter( 'get_the_excerpt', 'dw_custom_excerpt_more' );
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
@@ -209,7 +215,51 @@ function nerdy_get_images($size = 'thumbnail', $limit = '0', $offset = '0') {
 /* Numeric Pagination *******************************************
 April 18, 2011 deleted this, because I was not using it. Find it in many of my function files, if needed
 This if from the Gravy template by Darren Hoyt. http://www.darrenhoyt.com 
-*/
+*/   
+
+
+
+/**
+ * Returns a "Continue Reading" link for excerpts
+ *
+ * @since Twenty Ten 1.0
+ * @return string "Continue Reading" link
+ */
+function dw_continue_reading_link() {
+	return ' <br /><a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+}
+
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and twentyten_continue_reading_link().
+ *
+ * To override this in a child theme, remove the filter and add your own
+ * function tied to the excerpt_more filter hook.
+ *
+ * @since Twenty Ten 1.0
+ * @return string An ellipsis
+ */
+function dw_auto_excerpt_more( $more ) {
+	return ' &hellip;' . dw_continue_reading_link();
+}
+
+
+/**
+ * Adds a pretty "Continue Reading" link to custom post excerpts.
+ *
+ * To override this link in a child theme, remove the filter and add your own
+ * function tied to the get_the_excerpt filter hook.
+ *
+ * @since Twenty Ten 1.0
+ * @return string Excerpt with a pretty "Continue Reading" link
+ */
+function dw_custom_excerpt_more( $output ) {
+	if ( has_excerpt() && ! is_attachment() ) {
+		$output .= dw_continue_reading_link();
+	}
+	return $output;
+} 
+
+
 
 /**
  * Include and setup custom metaboxes and fields.

@@ -51,6 +51,7 @@ http://elisesiegel.com/
 
 - Press TOC archive page - category.php, upload press - style image and text   
 
+***    
 
 ##February 23, 2012##
 
