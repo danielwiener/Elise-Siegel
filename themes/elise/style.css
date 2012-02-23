@@ -639,14 +639,23 @@ body.page .edit-link {
  /*   line-height: 20px;*/   
 	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	color: #000;
-	font-size: 23px;
-	line-height: 23px;
+	font-size: 22px;
+	line-height: 22px;
 	border-bottom: 1px solid #000;
 	}
 
 .resume #content em, .resume #content strong {
 	color: #000;
 	} 	 
+
+.resume #content h1.entry-title {
+	color: #000;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+   /* text-transform: uppercase;*/
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: -20px;
+}
 
 /* =Asides
 -------------------------------------------------------------- */
