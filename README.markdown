@@ -59,4 +59,4 @@ http://elisesiegel.com/
 
 - modifying Continue Reading Link
 
-- format Press single posts
+- format Press single posts and sidebar
