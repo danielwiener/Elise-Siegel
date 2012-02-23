@@ -55,4 +55,6 @@ http://elisesiegel.com/
 
 ##February 23, 2012##
 
-- color, style, upload resume
+- adding all the Press with images
+
+- modifying Continue Reading Link
