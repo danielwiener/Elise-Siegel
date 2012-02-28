@@ -196,7 +196,7 @@ code {
 	margin-top: 0px; /*DW*/
 	padding: 0 20px;
 /*	border: 1px solid #999;*/
-	min-height: 650px;
+	/*min-height: 650px; */
 }
 
 #branding {
@@ -1240,6 +1240,7 @@ h3.widget-title a:link, h3.widget-title a:visited {
 
 #primary {
 	/*border: 1px solid #999;*/
+	float: right;
 }
 
 #secondary {
