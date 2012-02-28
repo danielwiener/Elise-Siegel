@@ -13,6 +13,31 @@
 	
 ?>
 		<div id="primary" class="widget-area" role="complementary">
+			<?php
+$pagelist = get_pages('sort_column=menu_order&sort_order=asc&child_of=69');
+$pages = array();
+foreach ($pagelist as $page) {
+$pages[] += $page->ID;
+}
+
+$current = array_search($post->ID, $pages);
+$prevID = $pages[$current-1];
+$nextID = $pages[$current+1];
+?>
+
+<div class="navigation">
+<?php if (!empty($prevID)) { ?>
+<span class="alignleft">
+<a href="<?php echo get_permalink($prevID); ?>" title="Previous - <?php echo get_the_title($prevID); ?>">&lsaquo;</a>
+</span>
+ <!-- <a href="" title="sometitle" class="little">Thumbnails</a> --> &nbsp;&nbsp;&nbsp;
+<?php }
+if (!empty($nextID)) { ?>
+<span class="alignright">
+<a href="<?php echo get_permalink($nextID); ?>" title="Next - <?php echo get_the_title($nextID); ?>">&rsaquo;</a>
+</span>
+<?php } ?>   
+</div><!-- .navigation -->
 			<ul class="xoxo">
 				<li>
 					<h3 class="widget-title">

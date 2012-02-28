@@ -1,3 +1,12 @@
+/* =Structure
+-------------------------------------------------------------- */
+#es_wrapper {
+	
+	margin: 0 auto;
+	width: 940px;
+	border: 1px solid #999;
+}
+
 #access .menu, #access div.menu ul, .entry-title, .navigation  {
 	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
@@ -28,6 +37,7 @@
 	color: #000;
 	padding: 0 0 0 20px;
 	letter-spacing: .1em;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	/*border: 1px solid #999;*/
  
 }
@@ -111,7 +121,14 @@ div.menu li {
 #access ul ul :hover > a {
 	background: #eee;
 	color: #666;
+}  
+
+#es_wrapper #access li:hover > a,
+#es_wrapper  #access ul ul :hover > a {
+	background: #ddd;
+	color: #333;
 }
+
 #access ul li:hover > ul {
 	display: block;
 }
