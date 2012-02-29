@@ -4,7 +4,7 @@ Plugin Name: Clean Up Dashboard
 Plugin URI: http://danielwiener.com/
 Description: Description
 Version: 0.1
-Author: Your Name
+Author: Daniel Wiener
 Author URI: http://danielwiener.com/ 
 */
 
