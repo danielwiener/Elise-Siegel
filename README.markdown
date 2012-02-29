@@ -59,4 +59,34 @@ http://elisesiegel.com/
 
 - modifying Continue Reading Link
 
-- format Press single posts and sidebar
+- format Press single posts and sidebar 
+
+***    
+
+
+##February 27, 2012##
+
+- integrating new menu into old site, using wp-load.php
+
+- navigation on sculpture pages   
+
+
+***    
+
+
+##February 28, 2012##
+
+- styling old site to integrate with new
+
+- changing every page on old site with includes to integrate with new site - visual and programming
+
+- create new Archives page, style Installations page  
+
+
+
+***    
+
+
+##February 29, 2012##
+
+- simplifying Admin and Dashboard for Elise (editor)
