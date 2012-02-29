@@ -80,7 +80,9 @@ http://elisesiegel.com/
 
 - changing every page on old site with includes to integrate with new site - visual and programming
 
-- create new Archives page, style Installations page  
+- create new Archives page, style Installations page 
+
+- Front Page  
 
 
 
