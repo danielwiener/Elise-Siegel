@@ -885,7 +885,7 @@ list-style: none;
 	font-weight: 300;
 	width: 100%;
 	padding: 0 0 5px 0;
-   /* border: 1px solid #999;*/  
+  /*  border: 1px solid #999; */ 
 }
 .navigation a:link,
 .navigation a:visited {
@@ -1430,4 +1430,22 @@ height: 200px;
 	border-color:#bebebe;
 	}  
 	
-                                           
+
+/* =sprites
+-------------------------------------------------------------- */
+
+#thumb a {
+	background-image:url(assets/thumbs.gif);
+	 border: 1px solid red;
+	width: 20px;
+	height: 16px;
+	display: block;}
+#thumb a.item1 {
+	background-position:0px 0px;
+
+	}
+#thumb a:hover.item1 {
+	
+	background-position:-20px 0px
+	}
+                                          
