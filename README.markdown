@@ -91,4 +91,14 @@ http://elisesiegel.com/
 
 ##February 29, 2012##
 
-- simplifying Admin and Dashboard for Elise (editor)
+- simplifying Admin and Dashboard for Elise (editor)     
+
+***    
+
+
+##March 1, 2012##
+
+- uploaded site - both old and new, so now live.
+
+- index.html and missing.html now use WP and thus show front page and sculpture page, respectively. cool, worked well.
+
