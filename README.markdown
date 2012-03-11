@@ -102,3 +102,16 @@ http://elisesiegel.com/
 
 - index.html and missing.html now use WP and thus show front page and sculpture page, respectively. cool, worked well.
 
+
+***  
+
+##March 11, 2012##
+
+- changed highlight for the menu with a light gray background - #F8F8F8
+
+- smaller front page image - 890px x 593px  
+
+- de-bold titles on resume
+
+-
+

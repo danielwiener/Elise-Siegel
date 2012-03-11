@@ -12,9 +12,7 @@ get_header(); ?>
 		<div id="container" class="press">
 			<div id="content" role="main">
 
-				<h1 class="entry-title"><?php
-					echo single_cat_title( '', false );
-				?></h1>
+
 				<?php
 				/* Run the loop for the category page to output the posts.
 				 * If you want to overload this in a child theme then include a file
