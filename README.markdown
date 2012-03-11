@@ -113,5 +113,5 @@ http://elisesiegel.com/
 
 - de-bold titles on resume
 
--
+- get rid of title on most pages
 
