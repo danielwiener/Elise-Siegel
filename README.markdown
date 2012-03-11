@@ -115,3 +115,7 @@ http://elisesiegel.com/
 
 - get rid of title on most pages
 
+- added page for styling of contact box
+
+- add sprite on sculpture pages to return to thumbnails
+
