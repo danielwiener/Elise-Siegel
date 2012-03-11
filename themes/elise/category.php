@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div id="container" class="resume">
+		<div id="container" class="press">
 			<div id="content" role="main">
 
 				<h1 class="entry-title"><?php
