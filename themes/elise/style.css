@@ -113,7 +113,7 @@ DESCRIPTION: One centered column with no sidebar
 	width: 750px;
 }
 
-.resume #content {
+.resume #content, .press #content {
 	margin: 0 auto;
 	width: 650px;
 	/*border: 1px solid #999;*/
@@ -127,13 +127,13 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 
 .single-attachment #content {
 	margin: 0 auto;
-	width: 900px;
+	width: 940px;
 }
 
 
 /*DESCRIPTION: Full width content with no sidebar; used for double image pages and for more*/
 .full_width #content {
-	width: 900px;
+	width: 940px;
     /*border: 1px solid #999;*/
 }   
 
@@ -633,6 +633,52 @@ body.page .edit-link {
 	padding: 0;
 }
 
+
+/* =Press DW 
+-------------------------------------------------------------- */
+
+.press #content p { 
+	padding: 0 0 0 0;
+	margin: 0 0 10px 0;
+	line-height: 20px;
+	}    
+	
+.press #content h2 { 
+	padding: 30px 0 0 0;
+	margin: 0 0 -7px 0;
+ /*   line-height: 20px;*/   
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #000;
+	font-size: 22px;
+	line-height: 22px;
+	} 
+	
+ .press #content h2.entry-title a:link,  .press #content h2.entry-title a:visited {
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #000;
+	font-weight: normal;
+	font-weight: 400;
+} 
+
+ .press #content h2.entry-title a:hover,  .press #content h2.entry-title a:active { 
+	color: #333;
+	}
+
+.press #content em, .press #content strong {
+	color: #000;
+	} 	 
+
+.press #content h1.entry-title {
+	color: #000;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+   /* text-transform: uppercase;*/
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: -20px;
+}
+
+
+
 /* =Resume DW 
 -------------------------------------------------------------- */
 
@@ -740,11 +786,11 @@ body.page .edit-link {
 #content img {
 	margin: 0;
 	height: auto;
-	max-width: 800px; /*DW*/
+	max-width: 940px; /*DW*/
 	width: auto;
 }
 #content .attachment img {
-	max-width: 900px;
+	max-width: 940px;
 }
 #content .alignleft,
 #content img.alignleft {
