@@ -931,7 +931,7 @@ list-style: none;
 	font-weight: 300;
 	width: 100%;
 	padding: 0 0 5px 0;
-  /*  border: 1px solid #999; */ 
+    border: 1px solid #999; 
 }
 .navigation a:link,
 .navigation a:visited {
@@ -1477,14 +1477,39 @@ height: 200px;
 	}  
 	
 
-/* =sprites    http://css-tricks.com/css-sprites/
+/* =sprites    http://css-tricks.com/css-sprites/   sprite is fine, but very fucked up way to get it lined up with the arrows, but need to finish
 -------------------------------------------------------------- */
+.sculpture_nav {
+	color: #666;
+    font-size: 20px; 
+    line-height: 10px !important;   
+	overflow: hidden;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-weight: 300;
+	width: 65px;
+	padding: 0 0 5px 0;
+
+}
+.sculpture_nav a:link,
+.sculpture_nav a:visited {
+	color: #000;
+	text-decoration: none;
+}
+.sculpture_nav a:active,
+.nsculpture_nav a:hover {
+	color: #333333;
+	text-decoration: none;  
+}
+
+span#thumb {
+	float: right;
+	padding: 6px 0 0 0;
+} 
 
 #thumb a {
-	background-image:url(assets/thumbs.gif);
-	 border: 1px solid red;
+	background-image:url(assets/thumbs.gif); 
 	width: 20px;
-	height: 16px;
+	height: 15px;
 	display: block;}
 #thumb a.item1 {
 	background-position:0px 0px;
