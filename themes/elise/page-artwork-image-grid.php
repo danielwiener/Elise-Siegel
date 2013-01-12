@@ -20,18 +20,19 @@ get_header(); ?>
 <?php  
 	$pageslug = $post->post_name;
 	$recent_args = array(
-		'posts_per_page' => 15,
+		'posts_per_page' => 25,
 		'post_type' => 'page',
 		'post_status' => 'publish',
-		'ignore_sticky_posts' => 1,
+	//	'ignore_sticky_posts' => 1,
 		'post_parent' => 69,
-		'arderby' => 'menu_order',
+		'orderby' => 'menu_order',
 		'order' => 'ASC'
 		);
-	query_posts($recent_args);
-			if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+		$artworks_query = New WP_Query($recent_args);
+	//query_posts($recent_args);
+			if ( $artworks_query->have_posts() ) while ( $artworks_query->have_posts() ) : $artworks_query->the_post(); ?>
 			      
-				<li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('tn-150'); ?></a></li>
+				<li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('tn-150'); ?></a><br><?php echo $post->menu_order; ?></li>
 			      
 			<?php endwhile; ?>
 					</ul>
