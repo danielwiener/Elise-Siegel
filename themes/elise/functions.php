@@ -204,6 +204,8 @@ function dw_metaboxes( array $dw_meta_boxes ) {
 				'desc' => 'Please, enter the dimensions.',
 				'id'   => $prefix . 'dimensions',
 				'type' => 'text',
+				'type' => 'wysiwyg',
+				'options' => array(	'textarea_rows' => 4, ),
 			), 
 			array(
 				'name' => 'Optional Text',
