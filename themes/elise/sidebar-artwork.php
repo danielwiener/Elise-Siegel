@@ -26,12 +26,13 @@ $nextID = $pages[$current+1];
 ?>
 
 <div class="sculpture_nav">
-<?php if (!empty($prevID)) { ?>
+<?php if (!empty($prevID)): ?>
 <span class="alignleft">
 <a href="<?php echo get_permalink($prevID); ?>" title="Previous - <?php echo get_the_title($prevID); ?>">&lsaquo;</a>
 </span>
-&nbsp;&nbsp;&nbsp;<span id="thumb"><a href="/es/sculpture" class="item1" title="Sculpture - Return to Thumbnails"></a></span> 
-<?php }
+<?php endif; ?>
+&nbsp;&nbsp;&nbsp;<span id="thumb" class="alignright"><a href="/es/sculpture" class="item1" title="Sculpture - Return to Thumbnails"></a></span> 
+<?php
 if (!empty($nextID)) { ?>
 <span class="alignright">
 <a href="<?php echo get_permalink($nextID); ?>" title="Next - <?php echo get_the_title($nextID); ?>">&rsaquo;</a>
