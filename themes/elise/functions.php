@@ -184,6 +184,7 @@ function dw_metaboxes( array $dw_meta_boxes ) {
 		'context'    => 'normal',
 		'priority'   => 'high',
 	    'show_on' => array( 'key' => 'page-template', 'value' => 'page-artwork.php' ), //only shows on artwork pages, maybe figure out how to do parent page - Sculpture
+	    //'show_on' => array( 'key' => 'page-template', 'value' => 'page-artwork.php' ), //only shows on artwork pages, maybe figure out how to do parent page - Sculpture
 		'show_names' => true, // Show field names on the left
 		'fields'     => array(
 			array(
