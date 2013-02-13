@@ -20,7 +20,7 @@ get_header(); ?>
 <?php  
 	$pageslug = $post->post_name;
 	$recent_args = array(
-		'posts_per_page' => 25,
+		'posts_per_page' => -1,
 		'post_type' => 'page',
 		'post_status' => 'publish',
 	//	'ignore_sticky_posts' => 1,
