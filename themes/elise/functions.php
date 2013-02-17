@@ -15,6 +15,13 @@ function blog_favicon() {
 }
 add_action('wp_head', 'blog_favicon');
 
+// FOR DEBUGGING WHICH TEMPLATE IS BEING USED.
+// add_action('wp_head', 'show_template');
+// function show_template() {
+// 	global $template;
+// 	print_r($template);
+// }
+
 
 /**
 * kill the admin nag 
