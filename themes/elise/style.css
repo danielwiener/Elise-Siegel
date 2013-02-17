@@ -897,9 +897,9 @@ color: #000;
 -------------------------------------------------------------- */
 #content #image_grid {
 	padding: 0 0 0 0px;
-	/*border: 1px solid #999; */
-   /* position: relative;*/ 
-    height: 160px;
+/*	border: 1px solid #999; */
+   /* position: relative; */
+    height: 255px;
 	}
 
 #content #image_grid ul {
@@ -909,8 +909,8 @@ list-style: none;
 
 #content #image_grid ul li {
 	float: left;
-	padding: 0 9px 0px 0;
-	line-height: 160px;    /*vertical centering set line height in the parent - http://www.vanseodesign.com/css/vertical-centering/*/
+	padding: 0 68px 0px 0;
+	line-height: 255px;    /*vertical centering set line height in the parent - http://www.vanseodesign.com/css/vertical-centering/*/
 }
 
 #content #image_grid ul li img {
