@@ -32,7 +32,7 @@ get_header(); ?>
 	//query_posts($recent_args);
 			if ( $artworks_query->have_posts() ) while ( $artworks_query->have_posts() ) : $artworks_query->the_post(); ?>
 			      
-				<li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('tn-150'); ?></a><br><?php // echo $post->menu_order; ?></li>
+				<li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('tn-200'); ?></a><br><?php // echo $post->menu_order; ?></li>
 			      
 			<?php endwhile; ?>
 					</ul>
